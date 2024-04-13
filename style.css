@@ -9,3 +9,72 @@ body {
 h1 {
 	text-align: center;
 }
+
+.tym {
+	display: flex;
+	flex-wrap: wrap;
+	}
+.prvni,
+.druha {
+	flex-basis: 48%;
+	margin: 5px;
+	flex-shrink: 1;
+	
+}
+.treti,
+.ctvrta {
+	flex-basis: 48%;
+	margin: 5px;
+	flex-shrink: 1;
+}
+.osoba {
+	border: 1px solid grey;
+	border-radius: 25px;
+	padding: 20px;
+	
+}
+.foto {
+	float: left;
+	border-radius: 50%;
+	margin: 10px;
+}
+.popis {
+	position: static;
+	top: 20px;
+	overflow: auto;
+}
+@media (max-width: 540px) {
+	.prvni,
+	.druha,
+	.treti,
+	.ctvrta {
+		flex-basis: 100%;
+		text-align: center;
+		margin: 10px 5px 10px 5px;
+	}
+	.foto {
+		float: none;
+	}
+	.popis {
+		padding-bottom: 20px;
+		
+	}
+} 
+@media (min-width: 960px) {
+	.prvni,
+	.druha,
+	.treti,
+	.ctvrta {
+		flex-basis: 25%;
+		text-align: center;
+		margin: 5px;
+		flex-basis: 24%;
+		flex-shrink: 1;
+	}
+	.foto {
+		float: none;
+	}
+	.popis {
+		padding-bottom: 20px;
+	}
+}
